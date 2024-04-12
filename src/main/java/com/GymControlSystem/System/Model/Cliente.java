@@ -1,8 +1,6 @@
 package com.GymControlSystem.System.Model;
 
 import jakarta.persistence.Entity;
-import lombok.Data;
-import org.springframework.stereotype.Service;
 
 
 @Entity
