@@ -15,9 +15,6 @@ import java.util.Date;
 @NoArgsConstructor
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class Persona {
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private Long id;
     @NotBlank
     private String nombre;
     @NotBlank

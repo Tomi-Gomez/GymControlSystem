@@ -37,7 +37,7 @@ public class ServiceEmpleado implements IServiceEmpleado{
 
     @Override
     public void modificarEmpleado(Empleado empleado) {
-        Empleado emple = this.traerEmpleado(empleado.getId());
+        Empleado emple = this.traerEmpleado(empleado.getIdEmpleado());
 
         if(emple.getNombre() != null){
             emple.setNombre(empleado.getNombre());

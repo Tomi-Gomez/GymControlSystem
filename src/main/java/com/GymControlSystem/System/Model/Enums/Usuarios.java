@@ -1,4 +1,4 @@
-package com.GymControlSystem.System.Model;
+package com.GymControlSystem.System.Model.Enums;
 
 public enum Usuarios {
     ADMIN,
