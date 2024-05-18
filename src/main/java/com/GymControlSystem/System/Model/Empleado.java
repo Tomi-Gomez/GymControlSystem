@@ -1,9 +1,7 @@
 package com.GymControlSystem.System.Model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import lombok.Data;
+import com.GymControlSystem.System.Model.Enums.Usuarios;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -11,6 +9,9 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Empleado extends Persona{
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    private Long idEmpleado;
     private String usuario = this.getNombre();
     private String contrasenia;
     @Enumerated(value = EnumType.STRING)
