@@ -4,9 +4,10 @@ import com.GymControlSystem.System.Model.Cliente;
 import com.GymControlSystem.System.Model.Empleado;
 import com.GymControlSystem.System.Repository.IRepositoryEmpleado;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class ServiceEmpleado implements IServiceEmpleado{
     @Autowired
     IRepositoryEmpleado IrepoEmpleados;
